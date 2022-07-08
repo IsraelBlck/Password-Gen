@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section>
+            <div id="presets">
+                <h1>Generate a <br> <span style="color:#4ADF86"> random password </span></h1>
+                <p class="password-text"> Never use an insecure password again. </p>
+            </div>
+            <label for="length-el" class="length-text"> Length of your password:</label><br>
+            <button onclick="subtract()">-</button>
+            <input type="number" name="quantity" id="length-el" value="15" min="5"> </input>
+            <button onclick="add()">+</button>
+            
+       <div class="generate-btn">
+            <button id="generate-passwords" onclick="generateRandomPassword()"> 
+                Generate Passwords </button>
+       </div>
+        <hr>
+        <div class="outputs-el">
+           <div > <p class="box1" type="text"  id="output1"></p></div>
+           <div > <p class="box2" type="text"  id="output2"></p></div>
+        </div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
